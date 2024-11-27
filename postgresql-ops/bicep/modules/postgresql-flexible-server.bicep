@@ -11,7 +11,7 @@ param virtualNetworkExternalId string = ''
 param subnetName string = ''
 param privateDnsZoneArmResourceId string = ''
 param administratorLogin string = 'bicepAdmin'
-param allowedIps array = ['201.141.26.197']
+param allowedIps array = ['0.0.0.0'] // Add Devs IPs
 
 resource postgresqlFlexibleServer 'Microsoft.DBforPostgreSQL/flexibleServers@2021-06-01' = {
   name: serverName
