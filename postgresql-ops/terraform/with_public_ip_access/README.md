@@ -24,8 +24,10 @@ terraform init -upgrade
 Create plan
 
 ```bash
-terraform plan -out main.tfplan 
+terraform plan -var="start_ip_address=0.0.0.0" -var="end_ip_address=0.0.0.0"
 ```
+
+You can set range of IPs or single IP, eg. start_ip_address=0.0.0.0, and end_ip_address=0.0.0.0
 
 Apply a Terraform execution plan
 
