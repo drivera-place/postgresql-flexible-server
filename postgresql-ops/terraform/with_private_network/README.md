@@ -24,7 +24,7 @@ terraform init -upgrade
 Create plan
 
 ```bash
-terraform plan -out main.tfplan 
+terraform plan -out main.tfplan -var="start_ip_address=0.0.0.0" -var="end_ip_address=0.0.0.0"
 ```
 
 Apply a Terraform execution plan
@@ -43,6 +43,12 @@ Clean up resources
 
 ```bash
 terraform plan -destroy -out main.destroy.tfplan
+```
+
+Applying destroy !Warning
+
+```bash
+terraform apply "main.destroy.tfplan"
 ```
 
 ## References
