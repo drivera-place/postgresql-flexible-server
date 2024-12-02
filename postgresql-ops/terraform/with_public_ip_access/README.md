@@ -47,6 +47,12 @@ Clean up resources
 terraform plan -destroy -out main.destroy.tfplan
 ```
 
+Applying destroy !Warning
+
+```bash
+terraform apply "main.destroy.tfplan"
+```
+
 ## References
 
 [Deploy a PostgreSQL Flexible Server Database using Terraform](https://learn.microsoft.com/en-us/azure/developer/terraform/deploy-postgresql-flexible-server-database?tabs=azure-cli)

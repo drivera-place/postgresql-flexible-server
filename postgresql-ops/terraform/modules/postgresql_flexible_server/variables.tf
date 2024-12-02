@@ -11,5 +11,9 @@ variable "location" {
 }
 
 variable "administrator_password" {
-  default = "N0P4ssWordYet!"
+  nullable = false
+}
+
+variable "public_network_access_enabled" {
+  default = false
 }

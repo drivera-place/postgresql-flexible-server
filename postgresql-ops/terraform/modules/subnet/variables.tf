@@ -10,5 +10,5 @@ variable "resource_group_name" {
 
 variable "address_prefixes" {
   default = "10.0.2.0/24"
-  type = string
+  type    = string
 }

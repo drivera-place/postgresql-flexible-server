@@ -1,10 +1,10 @@
 output "server_name" {
-    value = azurerm_postgresql_flexible_server.this.name
+  value = azurerm_postgresql_flexible_server.this.name
 }
 
 output "administrator_password" {
   sensitive = true
-  value = azurerm_postgresql_flexible_server.this.administrator_password
+  value     = azurerm_postgresql_flexible_server.this.administrator_password
 }
 
 output "server_id" {
